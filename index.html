@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encryptor and Decryptor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="heading">Encrypt and Decrypt your messages</h1>
+    <div class="message_box">
+        <h3 class="message_header">Encrypt Your Message</h3>
+        <div class="message_container">
+            <p class="enter_the_message">Enter the message: </p><br>
+            <input class="input_message" type="text"></input>
+            <button class="submit" onclick="takeActualMessage()">Encrypt</button><hr color="#f1f1f1">
+            <p class="output_message_container"></p>
+        </div>
+    </div>
+    <button class="paste_encrypted_message" onclick="pasteMessage()">Copy Encrypted Message to Decrypt Field</button>
+    <div class="message_box">
+        <h3 class="message_header">Decrypt Your Message</h3>
+        <div class="message_container">
+            <p class="enter_the_message">Enter the encrypted message: </p><br>
+            <input class="input_message" type="text"></input>
+            <button class="submit" onclick="takeEncryptedMessage()">Decrypt</button><hr color="#f1f1f1">
+            <p class="output_message_container"></p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
